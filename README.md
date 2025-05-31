@@ -42,9 +42,4 @@ This will:
 5.  **Querying (`query_collection`)**: Preprocesses the input query texts and then uses the collection's `query` method to find the `n_results` most similar documents.
 6.  **Main (`main`)**: Orchestrates the pipeline by calling the above functions with sample data to demonstrate the workflow.
 
-## Customization
 
--   **Embedding Model**: You can change the sentence transformer model in `setup_chroma()` by modifying the `model_name` parameter. Refer to the [Sentence Transformers documentation](https://www.sbert.net/docs/pretrained_models.html) for available models.
--   **Persistent Storage Path**: The path for ChromaDB storage can be changed in `setup_chroma()` by modifying the `path` parameter for `chromadb.PersistentClient`.
--   **Documents and Queries**: Modify the `documents`, `ids`, and `query_texts` variables in the `main()` function to use your own data.
--   **Preprocessing**: The `preprocess_text` function can be extended or modified to include other preprocessing steps like stemming, lemmatization, or stop word removal if needed.
